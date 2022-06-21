@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "PORT=3001 nodemon server.js --port 3001",
+    "dev": "nodemon server.js --port 3001",
     "test": "jest -i --verbose tests",
     "test:watch": "npm run test -- --watch"
   },
@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "jest": "^28.0.3",
-    "supertest": "^6.2.3",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   },
   "jest": {
     "testEnvironment": "node",

@@ -17,12 +17,12 @@ By the end of this lab you will be able to...
 
 #### Core feature:
 
-- [ ] Node/Express API written in JavaScript
-- [ ] Code to create the Express application and wire up the middleware should be written in the `app.js` file
-- [ ] Code to run the API located in the `server.js` file, where it sould import the Express application from the `app.js` code and then make sure it listens on port `3000`.
-- [ ] A `GiftExchange` model that implements two different gift-exchange algorithms.
-- [ ] An Express router living at the `/gift-exchange` endpoint to handle requests for the two different algorithms
-- [ ] Logging and error-handling middleware to enable more seamless interaction with the API
+- [x] Node/Express API written in JavaScript
+- [x] Code to create the Express application and wire up the middleware should be written in the `app.js` file
+- [x] Code to run the API located in the `server.js` file, where it sould import the Express application from the `app.js` code and then make sure it listens on port `3000`.
+- [x] A `GiftExchange` model that implements two different gift-exchange algorithms.
+- [x] An Express router living at the `/gift-exchange` endpoint to handle requests for the two different algorithms
+- [x] Logging and error-handling middleware to enable more seamless interaction with the API
 
 #### Stretch Feature:
 
@@ -37,14 +37,14 @@ By the end of this lab you will be able to...
 
 #### TDD Lab
 
-- [ ] Start by installing the core dependencies for this project with `npm install`.
-- [ ] Try running the tests in the terminal. They should all be failing, but that's ok. We'll use them to guide our development during this lab.
+- [x] Start by installing the core dependencies for this project with `npm install`.
+- [x] Try running the tests in the terminal. They should all be failing, but that's ok. We'll use them to guide our development during this lab.
 
 ```bash
 npm run test
 ```
 
-- [ ] To start the server in development mode run:
+- [x] To start the server in development mode run:
 
 ```bash
 npm run dev
@@ -52,8 +52,8 @@ npm run dev
 
 Running the tests along with the server requires having two terminal windows open:
 
-  - [ ] In one run the `npm run dev`
-  - [ ] In the other, run `npm run test:watch`
+  - [x] In one run the `npm run dev`
+  - [x] In the other, run `npm run test:watch`
 
 Then, every time a file is updated, the tests will be re-run. At the beginning, the `npm run dev` command will fail since we don't have a valid Express application to run. Let's fix that in the following steps!
 
@@ -79,16 +79,16 @@ The Express app and server will be split up in two different files - `app.js` an
 
 In the `app.js` file:
 
-- [ ] Wire up a server
-  - [ ] Start by using the `express` package to instantiate a simple server application
-  - [ ] Export the application from the `app.js` file as its default export
-- [ ] Test that the application works.
-  - [ ] Punch the `npm run dev` command into the terminal and if all goes well, the server should start up.
-- [ ] Add essential middleware
-  - [ ] Next, incorporate a logging middleware into the application with the `morgan` package and set its logging level to `tiny`.
-  - [ ] Afterwards, set up a request body parsing middleware with the `express.json` method.
-  - [ ] Consult the express [docs](https://expressjs.com/en/5x/api.html) if any of these parts seem confusing.
-- [ ] Define a "healthcheck" endpoint
+- [x] Wire up a server
+  - [x] Start by using the `express` package to instantiate a simple server application
+  - [x] Export the application from the `app.js` file as its default export
+- [x] Test that the application works.
+  - [x] Punch the `npm run dev` command into the terminal and if all goes well, the server should start up.
+- [x] Add essential middleware
+  - [x] Next, incorporate a logging middleware into the application with the `morgan` package and set its logging level to `tiny`.
+  - [x] Afterwards, set up a request body parsing middleware with the `express.json` method.
+  - [x] Consult the express [docs](https://expressjs.com/en/5x/api.html) if any of these parts seem confusing.
+- [x] Define a "healthcheck" endpoint
   - [ ] Create a single `GET` request handler at the `/` endpoint
     - [ ] It should respond to all `GET` requests with a JSON object and a `200` status code
     - [ ] The JSON response should contain a single key of `ping` that stores the string value: `pong`. As in: `{ "ping": "pong" }`.
